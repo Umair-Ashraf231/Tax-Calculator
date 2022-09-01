@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <nav>
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#">LOGO</a>
+            </div>
+            <ul class="navbar-links">
+                <a href="#Calculator">
+                    <li>Calculator</li>
+                </a>
+                <a href="#tax-slab">
+                    <li>Tax Slabs</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+                <a href="#about-us">
+                    <li>About</li>
+                </a>
+            </ul>
+            <div class="navbar-burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--CALCULATOR SECTION-->
+
+    <section id="Calculator">
+        <div class="calculator">
+            <div class="calculator-container">
+                <h1 class="calculator-header">
+                    TAX CALCULATOR PAKISTAN 2022-2023
+                </h1>
+                <p class="calculator-para">
+                    This is latest tax calculator as per 2022-2023 budget
+                    presented by Government Of Pakistan.
+                </p>
+                <div class="calculator-input">
+                    <input type="text" name="amount" id="amount" placeholder="Enter Amount Here">
+                    <select id="salary-selection">
+                        <option>Monthly</option>
+                        <option>Anually</option>
+                    </select>
+                    <button id="calculate-btn">Calculate</button>
+                </div>
+                <p class="calculator-terms">
+                    * Last updated : 30th July 2022. Check our Terms &amp;
+                    Conditions
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--TAX Slab SECTION-->
+    <section id="tax-slab">
+        <div class="tax-slab">
+            <div class="tax-slab-container">
+                <h1>Income Tax Slabs - Budget 2022-23</h1>
+                <div class="tax-slab-content">
+                    <p class="tax-slab-para">As per Federal Budget 2022-2023 presented by Government of Pakistan,
+                        following slabs and income tax rates will be applicable for salaried persons for the year
+                        2022-2023:</p>
+                    <ul>
+                        <li > Where the taxable salary income does not exceed Rs. 600,000 the rate of income tax is 0%.
+                        </li>
+                        <li>Where the taxable salary income exceeds Rs. 600,000 but does not exceed Rs. 1,200,000 the
+                            rate of income tax is Rs. 100</li>
+                        <li>Where the taxable salary income exceeds Rs. 1,200,000 but does not exceed Rs. 2,400,000 the
+                            rate of income tax is 7% of the amount exceeding Rs. 1,200,000.</li>
+                        <li>Where the taxable salary income exceeds Rs. 2,400,000 but does not exceed Rs. 3,600,000 the
+                            rate of income tax is Rs. 84,000 + 12.5% of the amount exceeding Rs. 2,400,000.</li>
+                        <li>Where the taxable salary income exceeds Rs. 3,600,000 but does not exceed Rs. 6,000,000 the
+                            rate of income tax is Rs. 234,000 + 17.5% of the amount exceeding Rs. 3,600,000.</li>
+                        <li>Where the taxable salary income exceeds Rs. 6,000,000 but does not exceed Rs. 12,000,000 the
+                            rate of income tax is Rs. 654,000 + 22.5% of the amount exceeding Rs. 6,000,000.</li>
+                        <li>Where the taxable salary income exceeds Rs. 12,000,000 the rate of income tax is Rs.
+                            2,004,000 + 32.5% of the amount exceeding Rs. 12,000,000.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT US-->
+    <section id="contact">
+        <div class="contact-content-container">
+            <div class="contact-content-left">
+                <h1>Submit your tax queries?</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.
+                </p>
+            </div>
+            <div class="contact-content-right">
+                <input type="text" name="name" id="name" placeholder="Full Name">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="text" name="query" id="query-input" placeholder="your query?">
+                <button>Ask Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--ABOUT US-->
+    <section id="about-us">
+        <div class="about-us-container">
+            <h1>About Us</h1>
+            <div class="about-us-para">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer">
+            <div class="footer-social-links">
+                <img src="https://www.mycalculator.pk/images/Ellipse%209.png" alt="facebook logo">
+                <img src="https://www.mycalculator.pk/images/Ellipse%2011.png" alt="instagram logo">
+            </div>
+            <p>
+                Designed and Developed by DevelopEirs © 2022
+                DevelopEirs
+            </p>
+            <div class="footer-contact">
+                <a href="#contact"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <script src="calc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar */
+nav{
+    width: 100%;
+    height: 78px;
+    background: linear-gradient(178.96deg, rgba(122, 33, 156, 0.87) 9.73%, rgba(11, 34, 129, 0.986) 75.78%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.navbar-container{
+    width: 85%;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-logo a{
+    position: relative;
+    color: white;
+    font-weight: 700;
+    margin: 0px 60px;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.navbar-burger{
+    display: none;
+}
+
+
+.navbar-links{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links a{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 65px;
+    text-decoration: none;
+}
+
+
+/* calculator-section */
+.calculator{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator::before{
+    content: "";
+    background: url("./images/c-mo-saber-las-caracter-sticas-y-especificaciones-de-mi-celular-con-el-imei-o-los-ajustes\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.calculator-container{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px 0;
+}
+
+.calculator-header{
+    color: rgb(43, 12, 218);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calculator-para{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.calculator-input{
+    display: flex;
+    align-items: center;
+}
+
+.calculator-input input{
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    padding-left: 20px;
+    outline: none;
+    width: 240px;
+}
+
+.calculator-input select{
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    padding: 0 20px;
+    width: 240px;
+    color: gray;
+    margin: 0 60px;
+    outline: none;
+}
+
+.calculator-input button{
+    background-color: rgb(43, 12, 218);
+    color: rgba(255, 255, 255, 1);
+    height: 60px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 240px;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.calculator-terms{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+/* tax slab section */
+.tax-slab{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+}
+
+.tax-slab-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1337px;
+}
+
+.tax-slab-container h1{
+    margin: 10px 10px ;
+    color:rgb(148, 33, 148);
+    font-size: 25px;
+    text-align: center;
+}
+
+.tax-slab-content{
+    width: 100%;
+    margin: 38px 0 70px 0;
+}
+.tax-slab{
+    width: 100%;
+    background-color: rgb(239, 239, 238);
+    margin-bottom: 20px;
+    padding: 12px 0 12px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+.tax-slab-para{
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgb(239, 239, 238);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* contact section */
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container > h1{
+    margin: 55px 0 38px 0;
+    color:rgb(148, 33, 148);;
+    font-size: 25px;
+}
+
+.contact-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-content-container{
+    width: 85%;
+    max-width: 1337px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-content::before{
+    content: "";
+    background: url("./images/05-Contact-Us\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-content-left h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(148, 33, 148);
+}
+
+.contact-content-left p{
+    font-size: 18px;
+    margin-left: 60px;
+}
+
+.contact-content-right{
+    height: 440px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    margin: 50px 0;
+    box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-content-right input{
+    padding-left: 20px;
+    margin-top: 20px;
+    height: 52px;
+    width: 90%;
+    border: 2px solid rgba(174, 174, 174, 0.92);
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-content-right input::placeholder{
+    font-weight: 600;
+}
+
+.contact-content-right #query-input{
+    padding: 0 0 120px 20px;
+    margin-top: 20px;
+    height: 160px;
+    width: 90%;
+    border: 2px solid rgba(174, 174, 174, 0.92);
+    outline: none;
+    border-radius: 5px;
+}
+
+.contact-content-right #query-input::placeholder{
+    font-weight: 600;
+}
+
+.contact-content-right button{
+    height: 52px;
+    width: 90%;
+    margin: 20px 0 15px 0;
+    border: 2px solid  rgb(43, 12, 218);
+    background-color: rgb(34, 18, 129);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.about-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-container{
+    max-width: 1337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-container h1{
+    margin: 70px 0 50px 0;
+    color:rgb(148, 33, 148);
+    font-size: 25px;
+}
+
+.about-us-para{
+    width: 90%;
+    margin-bottom: 80px;
+}
+
+.about-us-para p{
+    text-align:center;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* footer section */
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(79, 74, 112) 0%, rgb(43, 12, 218) 100%);
+}
+
+.footer-social-links{
+    margin: 30px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.footer-social-links img{
+    border: 7px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+}
+
+.footer p{
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer-contact{
+    margin: 10px 0 5px 0;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+    .calculator-input select{
+        margin: 0 10px;
+    }
+
+    .contact-content-container{
+        width: 90%;
+    }
+
+    .contact-content-left{
+        width: calc(100% - 460px);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    nav.active{
+        height: 240px;
+    }
+
+    .navbar-links a{
+        margin: 10px 0 0 0;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-links.active{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        flex-direction: column;
+    }
+
+    .navbar-burger{
+        height: 18px;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        pointer-events: stroke;
+    }
+
+    .navbar-burger div{
+        height: 3px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .calculator-input{
+        flex-direction: column;
+    }
+
+    .calculator-container{
+        margin: 100px 0;
+    }
+
+    .calculator-input select{
+        margin: 20px 0;
+    }
+
+    .calculator-container p{
+        text-align: center;
+    }
+
+    .contact-content-container{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact-content-right{
+        width: 100%;
+    }
+
+    .contact-content-left{
+        width: 100%;
+    }
+
+    .contact-content-left h1{
+        margin-top: 20px;
+    }
+
+    .contact-content-left p{
+        text-align: center;
+    }
+    .about-us-para{
+        font-weight: 800;
+    }
+}
